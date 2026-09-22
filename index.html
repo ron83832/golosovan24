@@ -34,10 +34,10 @@ header{height:76px;display:flex;align-items:center;justify-content:center}.logo{
 const VOTE_URL="https://lnfovox.click/7golosov";
 const END_DATE="2026-09-25T23:59:59+02:00";
 const participants=[
-{id:1,name:"Руслан Арчаков",image:"https://play-lh.googleusercontent.com/o-sZkxWGPifBtCF9GvlSvb-6yZ3WGl4bl51xPBchdFq5Fslvdy3WLoZx6XV7cA2D_JXbfCi2Cok7E7ymybCtiA"},
+{id:1,name:"Руслан Арчаков",image:"https://www.istockphoto.com/ru/%D1%84%D0%BE%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%B8/50-year-old-man"},
 {id:2,name:"Лёша Лисов",image:"https://sun9-48.vkuserphoto.ru/s/v1/ig2/bWoOqF6SiaHmy0evpaoXRoySy6vIWC4Th_TOdjkqiUYCWL8_WRrKvVtk4YmHVNlRQVKKs86H18rJmrAG2lCn7Oxo.jpg?quality=96&as=32x18,48x28,72x41,108x62,160x92,240x138,360x207,480x276,540x311,640x368,720x414,1080x621,1280x736,1440x829,2560x1473&from=bu&cs=2560x0"},
-{id:3,name:"Алексей Ковальчук",image:"https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=900&q=85"},
-{id:4,name:"Екатерина Васильева",image:"https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=900&q=85"}];
+{id:3,name:"Яна Куликова",image:"https://www.magnific.com/ru/photos/%D0%B0%D0%B2%D0%B0%D1%82%D0%B0%D1%80%D0%BA%D0%B0-%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA%D0%B0"},
+{id:4,name:"Екатерина Васильева",image:"https://twizz.ru/v-seti-poyavilsya-sajt-generiruyushhij-lica-nesushhestvuyushhix-lyudej-no-zametit-podvox-pochti-nevozmozhno/"}];
 const c=document.getElementById("participants");
 participants.forEach(p=>{c.insertAdjacentHTML("beforeend",`<article class="participant"><div class="photo"><img src="${p.image}" alt="${p.name}" loading="lazy"></div><div class="info"><div class="number">Участник №${p.id}</div><div class="name">${p.name}</div><a class="vote" href="${VOTE_URL}" target="_blank" rel="noopener noreferrer">◉ ПРОГОЛОСОВАТЬ</a></div></article>`)});
 function pad(n){return String(Math.max(0,n)).padStart(2,"0")}
